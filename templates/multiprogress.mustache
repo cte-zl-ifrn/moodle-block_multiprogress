@@ -1,0 +1,85 @@
+<style>
+    .block_multiprogress.block {
+        border: none;
+    }
+    .block_multiprogress_container {
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    .block_multiprogress_header {
+        display: flex;
+        margin: auto;
+    }
+    .block_multiprogress_title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        max-width: 250px
+    }
+    .block_multiprogress_book {
+        margin-bottom: 20px;
+        width: 110px;
+    }
+    .block_multiprogress_stone {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .block_multiprogress_stone img {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .block_multiprogress_stone > div {
+        width: 100%;
+    }
+    .block_multiprogress_stone > div > span {
+        text-align: left;
+        display: block;
+    }
+    .block_multiprogress_stone > div > div {
+        display: flex
+    }
+
+    .block_multiprogress_progress {
+        width: 100%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+    .block_multiprogress_progress-bar {
+        height: 20px;
+        background-color: #ffd700;
+    }
+    .block_multiprogress_percentage {
+        width: 50px;
+        text-align: right;
+    }
+</style>
+
+<div class="block_multiprogress_container">
+    <div class="block_multiprogress_header">
+        <div class="block_multiprogress_title">Conquiste todas as pedras para abrir o livro mágico.</div>
+        <div class="block_multiprogress_book">
+            <img src="{{config.wwwroot}}/blocks/multiprogress/assets/img/livro.png" alt="Livro mágico">
+        </div>
+    </div>
+    {{#courses}}
+    <a href="view.php?id={{course_id}}" data-course_idnumber="{{course_idnumber}}" data-total_modules="{{total_modules}}" data-total_modules="{{completed_modules}}">
+        <div class="block_multiprogress_stone">
+            <img src="{{course_image_url}}">
+            <div>
+                <span>
+                    {{course_alias}}<br />
+                    {{course_subtitle}}
+                </span>                    
+                <div>
+                    <div class="block_multiprogress_progress">
+                        <div class="block_multiprogress_progress-bar" style="width: {{completion_percentage}}%;"></div>
+                    </div>
+                    <div class="block_multiprogress_percentage">{{completion_percentage}}%</div>
+                </div>                    
+            </div>
+        </div>
+    </a>
+    {{/courses}}
+</div>
