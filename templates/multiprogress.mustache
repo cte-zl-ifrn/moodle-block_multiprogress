@@ -44,12 +44,12 @@
         width: 100%;
     }
     .block_multiprogress_stone > div > span {
-        display: block;
         color: #1D1D1B;
-        text-align: left;
+        display: block;
         font-family: "Montserrat", sans-serif;
         font-size: 15px;
         font-weight: 500;
+        text-align: left;
         text-decoration: none;
     }
     .block_multiprogress_stone > div > div {
@@ -64,8 +64,8 @@
     }
     .block_multiprogress_progress-bar {
         background-color: #F8B133;
-        max-height: 23px;
         height: 100%;
+        max-height: 23px;
     }
     .block_multiprogress_percentage {
         color: #1D1D1B;
@@ -76,9 +76,9 @@
     }
     .show_more_link {
         color: #007bff;
-        text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
+        text-decoration: none;
     }
     .hidden {
       display: none;
@@ -86,10 +86,12 @@
 </style>
 
 <div class="block_multiprogress_container">
-    <div class="block_multiprogress_header hidden">
-        <div class="block_multiprogress_title">Conquiste todas as pedras para abrir o livro mágico.</div>
+    <div class="block_multiprogress_header ">
+        <div class="block_multiprogress_title">
+          Conquiste todas as pedras para abrir o códex.
+        </div>
         <div class="block_multiprogress_book">
-            <img src="{{config.wwwroot}}/blocks/multiprogress/assets/img/livro.png" alt="Livro mágico">
+            <img src="{{config.wwwroot}}/blocks/multiprogress/assets/img/livro.png" alt="Códex">
         </div>
     </div>
     {{#courses}}
@@ -126,7 +128,12 @@
     </a>
     {{/courses}}
     <div class="show_more">
-        <a href="javascript:void(0);" class="show_more_link">Mostrar mais</a>
+      {{#isjourney}}
+        <a href="javascript:void(0);" class="show_more_link">Mostrar menos</a>
+      {{/isjourney}}
+      {{^isjourney}}
+         <a href="javascript:void(0);" class="show_more_link">Mostrar mais</a>
+      {{/isjourney}}
     </div>
 </div>
 <script>
@@ -134,9 +141,6 @@
       document.querySelectorAll('.show_more_link').forEach(function (link) {
         link.addEventListener('click', function () {
           document.querySelectorAll('.block_multiprogress_stone').forEach(function (el) {
-              el.classList.toggle('hidden');
-          });
-          document.querySelectorAll('.block_multiprogress_header').forEach(function (el) {
               el.classList.toggle('hidden');
           });
 

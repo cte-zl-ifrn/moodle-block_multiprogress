@@ -123,10 +123,17 @@ class block_multiprogress extends block_base
                 $course->stone_color = '0, 255, 255';
             }
             $course->isactive = ($course->course_id == $COURSE->id) ? 'd-flex' : 'hidden';
+            if (preg_match('/.*\.(FIC.\\d*)#.*/', $COURSE->idnumber, $matches)) {
+                $disc = $matches[1];
+                if ($disc == 'FIC.1198') {
+                    $course->isactive = ($course->course_id == $COURSE->id) ? 'd-flex' : '';
+                }
+            }
         }
 
         $data = [
-            'courses' => array_values($courses)
+            'courses' => array_values($courses),
+            'isjourney' => ($disc == 'FIC.1198')
         ];
 
         $this->content = new stdClass();
