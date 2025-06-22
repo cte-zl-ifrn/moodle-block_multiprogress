@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_multiprogress';
-$plugin->release = '0.1.7';
-$plugin->version = 2025_06_21_07;
-$plugin->requires = 2022_11_28_00;
+$plugin->release = '0.1.8';
+$plugin->version = 2025062108;
+$plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_RC;
