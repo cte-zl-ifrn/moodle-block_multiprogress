@@ -37,7 +37,7 @@ function block_multiprogress_bulk_course_custom_field()
     global $DB;
     $cat = \local_suap\save_course_custom_field_category('Multi progress');
 
-    \local_suap\save_course_custom_field($cat->id, 'multiprogress_course_alias', 'Aélido do curso');
+    \local_suap\save_course_custom_field($cat->id, 'multiprogress_course_alias', 'Apelido do curso');
     \local_suap\save_course_custom_field($cat->id, 'multiprogress_course_subtitle', 'Subtítulo do curso');
     \local_suap\save_course_custom_field($cat->id, 'multiprogress_course_image_url', 'URL da imagem do curso');
 }
