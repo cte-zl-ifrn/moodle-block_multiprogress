@@ -1,7 +1,9 @@
-# Autores do Projeto block_multiprogress
+# Autores do Workspace ProITEC Moodle Suite
 
 Os seguintes colaboradores contribuíram para o desenvolvimento deste projeto:
 
-- **Kelson da Costa Medeiros** - <kelsoncm@gmail.com>
-- **Daniel Berg Lopes Campelo de Morais** - <danielbergmorais@gmail.com>
-- **Matheus Mathias Rocha Lúcio de Moraes** - <mathias.matheus76@gmail.com>
+| Nome                                                         | email                       | Papel                   |
+| ------------------------------------------------------------ | --------------------------- | ----------------------- |
+| Kelson da Costa Medeiros                                     | kelsoncm@gmail.com          | Tech Leader & Developer |
+| Matheus Mathias Rocha Lúcio de Moraes                        | mathias.matheus76@gmail.com | Developer               |
+| Daniel Berg Lopes Campelo de Morais                          | danielbergmorais@gmail.com  | Developer               |
