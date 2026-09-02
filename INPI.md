@@ -1,0 +1,12 @@
+# Dados para envio ao INPI
+
+- Título: **block_multiprogress (plugin Moodle do tipo bloco)**
+- Linguagens de programação: `PHP`, `JavaScript`, `CSS`, `Mustache`, `SQL`
+- Classificação: `AP01 - Aplicativos`, `EA01 - Educação / Aprendizagem`, `GI01 - Gerenciador de Informações`
+- Data de criação: `04/06/2025`
+- Apresentação: O block_multiprogress é um plugin do tipo bloco lateral para o Moodle, desenvolvido na fase inicial da suíte ProITEC do IFRN para exibir uma barra de progresso consolidada das trilhas de conhecimento do curso. Encontra-se registrado e documentado com nota de depreciação tecnológica em favor de sua substituição pelo módulo de atividade mod_multiprogress.
+- Descrição: O programa foi concebido como um bloco de interface lateral que consultava os campos personalizados de curso criados via local_suap (multiprogress_course_alias, multiprogress_course_subtitle, multiprogress_course_image_url) e renderizava barras de progresso para as quatro disciplinas da matriz do ProITEC. O projeto serviu como prova de conceito e base de design (baseada em protótipo Adobe XD) para a evolução dos módulos de atividade da suíte, sendo posteriormente descontinuado para permitir que o acompanhamento de progresso fosse integrado diretamente como atividade central na página do curso.
+- Aplicação: O block_multiprogress foi aplicado nas primeiras ofertas experimentais da plataforma de gamificação do ProITEC no IFRN, auxiliando os estudantes a monitorarem seu progresso simultâneo nas disciplinas de Matemática, Língua Portuguesa, Ética e Cidadania e Seminário de Integração a partir da barra lateral do ambiente.
+- Futuros: Por se tratar de um componente legado e descontinuado, não estão previstas novas implementações funcionais para o bloco. O código permanece versionado e mantido no repositório para fins de rastreabilidade histórica, compatibilidade com versões antigas e preservação da propriedade intelectual do IFRN.
+- Viabilidade Econômica: O registro da tecnologia documenta o ciclo de vida e a evolução dos ativos de software desenvolvidos no IFRN, assegurando a proteção da propriedade intelectual sobre a arquitetura de consolidação de progresso por trilhas que deu origem aos módulos vigentes da suíte ProITEC.
+- Programas Similares: Programas similares incluem o bloco Completion Progress e o bloco Course Progress do Moodle. O block_multiprogress diferenciava-se pela integração específica com metadados de campos de perfil do SUAP e pela consolidação simultânea das quatro trilhas do programa ProITEC.
